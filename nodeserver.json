@@ -1,0 +1,23 @@
+{
+	"apps": [{
+		// Application #1
+		"name": "server",
+		"script": "./bin/www",
+		"cwd": "apps/server",
+		"args": ["--toto=heya coco", "-d", "1"],
+		"node_args": "--harmony",
+		"merge_logs": true,
+		"instances": 1,
+		"exec_mode": "cluster",
+		"error_file": "./log/err.log",
+		"out_file": "./log/out.log",
+		"pid_file": "./log/pids.pid",
+		"env": {
+			"NODE_ENV": "development",
+			"AWESOME_SERVICE_API_TOKEN": "xxx"
+		},
+		"env_production": {
+			"NODE_ENV": "production"
+		}
+  }],
+}
