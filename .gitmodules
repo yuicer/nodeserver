@@ -1,0 +1,3 @@
+[submodule "apps/server"]
+	path = apps/server
+	url = ssh://root@10.10.1.3/root/pod/repos/server.git
